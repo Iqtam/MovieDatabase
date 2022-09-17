@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AllMovieController">
+    <center>
+        <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="788.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="title" prefWidth="120.79999351501465" text="Title" />
+                <TableColumn fx:id="year" prefWidth="46.4000244140625" text="Year" />
+                <TableColumn fx:id="genre1" prefWidth="64.79998779296875" text="Genre1" />
+                <TableColumn fx:id="genre2" prefWidth="68.0" text="Genre2" />
+                <TableColumn fx:id="genre3" prefWidth="75.20001220703125" text="Genre3" />
+                <TableColumn fx:id="time" prefWidth="71.199951171875" text="Run Time" />
+                <TableColumn fx:id="company" prefWidth="116.79989624023438" text="Company" />
+                <TableColumn fx:id="budget" prefWidth="80.00006103515625" text="Budget" />
+                <TableColumn fx:id="revenue" prefWidth="80.0001220703125" text="Revenue" />
+            </columns>
+            <padding>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+            </padding>
+        </TableView>
+    </center>
+    <top>
+        <AnchorPane prefHeight="73.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="449.0" layoutY="30.0" mnemonicParsing="false" onAction="#onTransferButton" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #009900;" stylesheets="@style.css" text="Transfer To" />
+                <TextField fx:id="receiver" layoutX="240.0" layoutY="35.0" prefHeight="27.0" prefWidth="190.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </TextField>
+                <Button layoutX="670.0" layoutY="30.0" mnemonicParsing="false" onAction="#onHomeBackButton" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #009900;" stylesheets="@style.css" text="Back" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

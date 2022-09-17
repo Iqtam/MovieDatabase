@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TotalProfitController">
+    <center>
+        <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="692.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="title" prefWidth="169.5999813079834" text="Title" />
+                <TableColumn fx:id="year" prefWidth="65.5999755859375" text="Year" />
+                <TableColumn fx:id="company" prefWidth="148.79998779296875" text="Company" />
+                <TableColumn fx:id="budget" prefWidth="84.79998779296875" text="Budget" />
+                <TableColumn fx:id="revenue" prefWidth="84.79995727539062" text="Revenue" />
+            <TableColumn fx:id="profit" prefWidth="89.5999755859375" text="Profit" />
+            </columns>
+            <padding>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+            </padding>
+        </TableView>
+    </center>
+    <top>
+        <AnchorPane prefHeight="73.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="624.0" layoutY="28.0" mnemonicParsing="false" onAction="#onHomeBackButton" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #009900;" stylesheets="@style.css" text="Back" />
+            </children>
+        </AnchorPane>
+    </top>
+   <bottom>
+      <AnchorPane prefHeight="95.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+                <Button layoutX="297.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #009900;" stylesheets="@style.css" text="Total Profit" />
+                <TextField fx:id="totalProfit" layoutX="483.0" layoutY="19.0" prefHeight="27.0" prefWidth="190.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </TextField>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

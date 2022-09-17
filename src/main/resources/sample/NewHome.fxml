@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <left>
+      <AnchorPane prefHeight="700.0" prefWidth="370.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="82.0" layoutY="43.0" mnemonicParsing="false" onAction="#onSearchMovieButton" prefHeight="26.0" prefWidth="178.0" stylesheets="@style.css" text="Search Movie" />
+            <Button layoutX="82.0" layoutY="121.0" mnemonicParsing="false" onAction="#onAllMovieButton" prefHeight="37.0" prefWidth="178.0" stylesheets="@style.css" text="All Movie" />
+            <Button layoutX="82.0" layoutY="440.0" mnemonicParsing="false" onAction="#onAddMovieHomeButton" prefHeight="37.0" prefWidth="178.0" stylesheets="@style.css" text=" Add Movie" />
+            <Button layoutX="82.0" layoutY="359.0" mnemonicParsing="false" onAction="#onProfitButton" prefHeight="37.0" prefWidth="178.0" stylesheets="@style.css" text="Profit" />
+            <Button layoutX="82.0" layoutY="271.0" mnemonicParsing="false" onAction="#onMaxRevenueButton" prefHeight="37.0" prefWidth="178.0" stylesheets="@style.css" text="Max Revenue" />
+            <Button layoutX="82.0" layoutY="193.0" mnemonicParsing="false" onAction="#onRecentMovieButton" prefHeight="37.0" prefWidth="178.0" stylesheets="@style.css" text="Recent Movie" />
+            <Button layoutX="82.0" layoutY="626.0" mnemonicParsing="false" onAction="#onLogoutButton" prefHeight="37.0" prefWidth="178.0" stylesheets="@style.css" text="Logout" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="700.0" prefWidth="431.0" style="-fx-background-color: #2196f3;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="onMovie" fitHeight="350.0" fitWidth="411.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="message" alignment="CENTER" layoutX="70.0" layoutY="403.0" prefHeight="128.0" prefWidth="313.0" style="-fx-background-color: #000503;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

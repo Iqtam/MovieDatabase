@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddMovieController">
+    <top>
+        <AnchorPane prefHeight="73.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="658.0" layoutY="28.0" mnemonicParsing="false" onAction="#onHomeBackButton" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #009900;" stylesheets="@style.css" text="Back" />
+                <Button layoutX="519.0" layoutY="28.0" mnemonicParsing="false" onAction="#onAddButton" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #009900;" stylesheets="@style.css" text="Add" />
+            </children>
+        </AnchorPane>
+    </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+                <Button layoutX="41.0" layoutY="84.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Movie Title" />
+            <Button layoutX="436.0" layoutY="295.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Budget" />
+            <Button layoutX="436.0" layoutY="193.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Run Time" />
+            <Button layoutX="436.0" layoutY="83.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Genre3" />
+            <Button layoutX="41.0" layoutY="407.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Genre2" />
+            <Button layoutX="41.0" layoutY="295.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Genre1" />
+            <Button layoutX="41.0" layoutY="193.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Release Year" />
+            <Button layoutX="436.0" layoutY="405.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #990099;" stylesheets="@style.css" text="Revenue" />
+            <TextField fx:id="title" layoutX="202.0" layoutY="88.0" prefHeight="28.0" prefWidth="186.0" promptText="Movie Title" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="year" layoutX="204.0" layoutY="197.0" prefHeight="28.0" prefWidth="186.0" promptText="Release Year" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="genre1" layoutX="202.0" layoutY="304.0" prefHeight="28.0" prefWidth="186.0" promptText="Genre1" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="genre2" layoutX="204.0" layoutY="411.0" prefHeight="28.0" prefWidth="186.0" promptText="Genre2" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="genre3" layoutX="591.0" layoutY="88.0" prefHeight="28.0" prefWidth="186.0" promptText="Genre3" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="time" layoutX="591.0" layoutY="197.0" prefHeight="28.0" prefWidth="186.0" promptText="Run Time" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="budget" layoutX="591.0" layoutY="304.0" prefHeight="28.0" prefWidth="186.0" promptText="Budget" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="revenue" layoutX="591.0" layoutY="409.0" prefHeight="28.0" prefWidth="186.0" promptText="Revenue" style="-fx-background-color: #ffff; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
